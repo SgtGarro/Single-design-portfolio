@@ -28,7 +28,7 @@ footer {
 #skills {
   margin-top: 32px;
 }
-#skills .container {
+.skills__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
@@ -131,7 +131,7 @@ footer {
   padding: 48px 24px;
   text-align: center;
 }
-.contact__card > * {
+.contact__card div > * {
   color: var(--light-cream);
 }
 

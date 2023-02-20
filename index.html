@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/tablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1200px)">
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
     </section>
 
     <section id="skills">
-      <div class="container">
+      <div class="container skills__container">
         <div class="skill__card skill__card--big" id="graphicDesign">
           <img src="assets/pattern-graphic-design.svg" alt="Graphic Design">
           <h4 class="skill__title">Graphic Design</h4>
@@ -56,7 +57,7 @@
     </section>
 
     <section id="profile">
-      <div class="container">
+      <div class="container profile__container">
         <img class="profile__image" src="assets/image-amy.webp" alt="Amy profile">
         <div class="profile__description">
           <h2 class="heading-m">I'm Amy, and I'd love to work on your next project</h2>
@@ -79,8 +80,10 @@
 
     <section id="contact">
       <div class="container contact__card">
-        <h2 class="heading-m">Book a call with me</h2>
-        <p class="paragraph">I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+        <div>
+          <h2 class="heading-m">Book a call with me</h2>
+          <p class="paragraph">I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+        </div>
         <a class="btn btn--secondary" href="#">Free Consultation</a>
       </div>
     </section>
