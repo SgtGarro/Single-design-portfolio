@@ -10,10 +10,12 @@ const responsiveSkillCards = () => {
   fullSkillCards.forEach(
     (card) => (card.style.height = getComputedStyle(card).width)
   );
-  midSkillCards.forEach(
-    (card) => (card.style.height = getComputedStyle(card).width / 2)
-  );
+  midSkillCards.forEach((card) => {
+    card.style.height = `${parseInt(getComputedStyle(card).width) / 2.5}px`;
+  });
 };
 
 window.addEventListener("load", responsiveSkillCards);
-window.addEventListener("resize", responsiveSkillCards);
+window.addEventListener("resize", () => {
+  responsiveSkillCards();
+});

@@ -105,7 +105,7 @@ footer {
 .works__slider {
   display: flex;
   column-gap: 15px;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 .work__slide {
   width: 270px;
