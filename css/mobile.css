@@ -1,0 +1,137 @@
+header,
+footer {
+  display: flex;
+  padding: 16px 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero,
+#profile,
+#skills,
+#contact {
+  padding-inline: 16px;
+}
+/* Hero section */
+#hero {
+  margin-top: 32px;
+}
+#hero .container {
+  text-align: center;
+}
+#hero .container .paragraph {
+  margin-top: 16px;
+  padding-inline: 30px;
+}
+
+/* Skills section */
+#skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 24px;
+  margin-top: 32px;
+}
+.skill__title {
+  color: var(--light-cream);
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+.skill__card {
+  background-color: black;
+  padding: 24px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skill__card img {
+  align-self: self-end;
+}
+.skill__card--big {
+  grid-column: 1 / -1;
+}
+.skill__card--medium {
+  grid-column: 1/ -1;
+}
+
+#graphicDesign {
+  background-color: var(--galactic-blue);
+}
+#uiUx {
+  background-color: var(--summer-yellow);
+}
+#apps {
+  background-color: var(--pink);
+}
+#illustrations {
+  background-color: var(--light-red);
+}
+#photography {
+  background-color: var(--cyan);
+}
+#motionGraphics {
+  background-color: var(--dark-purple);
+}
+
+/* Profile section */
+#profile {
+  margin-top: 100px;
+}
+.profile__image {
+  width: 100%;
+}
+.profile__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Works section */
+#works {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.works__header {
+  text-align: center;
+}
+.works__slider {
+  display: flex;
+  column-gap: 15px;
+  overflow-x: hidden;
+}
+.work__slide {
+  width: 270px;
+  border-radius: 10px;
+}
+
+/* Contact section */
+#contact {
+  margin-top: 100px;
+}
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+  background-color: var(--black);
+  border-radius: 10px;
+  padding: 48px 24px;
+  text-align: center;
+}
+.contact__card > * {
+  color: var(--light-cream);
+}
+
+/* Footer */
+footer {
+  padding-block: 0 32px;
+  margin-top: 40px;
+}
