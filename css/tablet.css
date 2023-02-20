@@ -75,6 +75,8 @@ header {
 }
 .works__slider {
   margin-top: 56px;
+  width: 540px;
+  height: 360px;
 }
 .work__slide {
   width: 540px;
