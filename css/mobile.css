@@ -26,11 +26,13 @@ footer {
 
 /* Skills section */
 #skills {
+  margin-top: 32px;
+}
+#skills .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
   gap: 24px;
-  margin-top: 32px;
 }
 .skill__title {
   color: var(--light-cream);
@@ -52,9 +54,14 @@ footer {
 }
 .skill__card--big {
   grid-column: 1 / -1;
+  row-gap: 100px;
 }
 .skill__card--medium {
   grid-column: 1/ -1;
+  row-gap: 40px;
+}
+.skill__card--small {
+  row-gap: 40px;
 }
 
 #graphicDesign {
@@ -95,15 +102,13 @@ footer {
 /* Works section */
 #works {
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
 }
 .works__header {
   text-align: center;
 }
 .works__slider {
   display: flex;
+  margin-top: 32px;
   column-gap: 15px;
   overflow-x: scroll;
 }

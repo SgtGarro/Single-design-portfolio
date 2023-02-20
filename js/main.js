@@ -1,21 +1,21 @@
-"use strict";
+// "use strict";
 
-// Responsive skill image
+// // Responsive skill image
 
-const [...skillCards] = document.querySelectorAll(".skill__card");
-const fullSkillCards = skillCards.slice(0, -3);
-const midSkillCards = skillCards.slice(3);
+// const [...skillCards] = document.querySelectorAll(".skill__card");
+// const fullSkillCards = skillCards.slice(0, -3);
+// const midSkillCards = skillCards.slice(3);
 
-const responsiveSkillCards = () => {
-  fullSkillCards.forEach(
-    (card) => (card.style.height = getComputedStyle(card).width)
-  );
-  midSkillCards.forEach((card) => {
-    card.style.height = `${parseInt(getComputedStyle(card).width) / 2.5}px`;
-  });
-};
+// const responsiveSkillCards = () => {
+//   fullSkillCards.forEach(
+//     (card) => (card.style.height = getComputedStyle(card).width)
+//   );
+//   midSkillCards.forEach((card) => {
+//     card.style.height = `${parseInt(getComputedStyle(card).width) / 2}px`;
+//   });
+// };
 
-window.addEventListener("load", responsiveSkillCards);
-window.addEventListener("resize", () => {
-  responsiveSkillCards();
-});
+// window.addEventListener("load", responsiveSkillCards);
+// window.addEventListener("resize", () => {
+//   responsiveSkillCards();
+// });
